@@ -34,3 +34,17 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 Two way binding, the long way
 Getter and setter
 valueChanges observable
+
+### ViewChild
+
+Angular Directive
+@ViewChild(NgModel) filterInput: NgModel:
+    <input type='text' [(NgModel)='listFilter']>
+
+Custom Directive / Child Component
+@ViewChild(StarComponent) star: StartComponent
+    <pm-start [rating]='product.starRating'></pm-star>
+
+Template Reference Variable
+@ViewChild('divElementVar') divElementRef: ElementRef;
+    <div #divElementVar>{{pageTitle}}</div>
