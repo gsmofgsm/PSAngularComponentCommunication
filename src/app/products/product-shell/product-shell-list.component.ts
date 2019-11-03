@@ -23,4 +23,7 @@ export class ProductShellListComponent implements OnInit {
     );
   }
 
+  onSeletected(product: IProduct) {
+    this.productService.currentProduct = product;
+  }
 }
