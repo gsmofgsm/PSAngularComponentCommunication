@@ -48,3 +48,8 @@ Custom Directive / Child Component
 Template Reference Variable
 @ViewChild('divElementVar') divElementRef: ElementRef;
     <div #divElementVar>{{pageTitle}}</div>
+
+
+## Communicating using service
+service need to be provided in module instead of in component,
+because component will get destroyed when navigating away to another component.
