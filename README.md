@@ -53,3 +53,7 @@ Template Reference Variable
 ## Communicating using service
 service need to be provided in module instead of in component,
 because component will get destroyed when navigating away to another component.
+
+## BehaviorSubject is Subject with two extra features
+it requires an initial value
+it provides the current value on a new subscription
